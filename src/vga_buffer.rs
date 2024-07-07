@@ -148,6 +148,7 @@ pub fn _print(args: fmt::Arguments) {
     WRITER.lock().write_fmt(args).unwrap();
 }
 
+#[allow(unused)]
 mod tests {
     use crate::vga_buffer::{BUFFER_HEIGHT, WRITER};
 
